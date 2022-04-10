@@ -9,15 +9,15 @@ html{
 
 body{
     padding-top: 50px;
-    background-color: #222;
+    background-color: whitesmoke;
 }
 .nav-container {
     position: fixed;
-    background-color: #111;
+    background-color: whitesmoke;
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 0 5px orange;
+    box-shadow: 0 0 8px #000;
 }
 
 .nav {
@@ -26,7 +26,21 @@ body{
     align-items: center;
     text-align: center;
     max-width: 1200px;
-    max-height: 70px;
+    min-height: 70px;
+
+}
+
+.contflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p {
+    font-size: 19px;
+    color: #000;
+    text-shadow: 0 0 2px grey;
+    margin-left: 10px;
 }
 
 .item-container {
@@ -37,15 +51,16 @@ body{
 .nav-item {
     text-decoration: none;
     padding: 15px;
-    color: white;
+    color: #000;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav-item:hover {
-    text-shadow: 0 0 5px ;
-    background-image: linear-gradient(45deg, yellow, orange);
+    border: 2px solid black;
     color: black;
     border-radius: 10px;
+    box-shadow: 0 0 0 white;
 }
 
 .textologo {
@@ -63,6 +78,17 @@ body{
     width: 30px;
 }
 
+@media (max-width:700px) {
+    nav{
+        flex-direction: column;
+    }
+    .nav-item:hover{
+        text-decoration: underline;
+    }
+    nav ul{
+        padding: 15px 0;
+    }
+}
 
 
 
