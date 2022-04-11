@@ -12,11 +12,12 @@ body{
 }
 .nav-container {
     position: fixed;
-    background-color: whitesmoke;
+    background: linear-gradient(45deg, white, #333);
     width: 100%;
     top: 0;
     left: 0;
     box-shadow: 0 0 8px #000;
+    border-radius: 5px;
 }
 
 .nav {
@@ -34,7 +35,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.contflex a {
+    text-decoration: none;
+}
 nav p {
     font-size: 19px;
     color: #000;
@@ -50,14 +53,14 @@ nav p {
 .nav-item {
     text-decoration: none;
     padding: 15px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .nav-item:hover {
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     border-radius: 10px;
     box-shadow: 0 0 0 white;
 }
@@ -114,27 +117,39 @@ nav p {
 }
 
 .perfil{
-    background-color: lightgray;
+    background: linear-gradient(lightgray, black);
+    line-height: 25vh;
 }
+
+
 .perfil h2 {
+    color: white;
+    text-shadow: 0 0 3px black;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    line-height: 200px;
     font-size: 43px;
-    padding-bottom: 20vh;
+    padding-top: 30px;
 }
 
 .perfil p {
+    color: white;
+    text-shadow: 0 0 3px black;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     font-size: 34px;
-    padding: 30px;
+}
+.perfil a{
+    text-decoration: none;
+    color: #000;
+}
+.perfil a p:hover{
+    color: blue;
 }
 
 .trabajos h3{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    line-height: 90vh;
+    line-height: 100vh;
     font-size: 65px;
     background-image: linear-gradient(
         0deg,
@@ -149,11 +164,36 @@ nav p {
     background-position: center;
 }
 
-.img-trabajos{
+.container-carta{
+    background: linear-gradient(45deg,whitesmoke,#333 );
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
     display: grid;
-    grid-template-columns: repeat(minmax(auto-fill));
+    width: 100%;
+    padding: 20px;
+    grid-template-columns: repeat(2, 47%);
+    grid-gap: 10px;
 }
-.img-trabajos img{
+
+.carta img {
+    justify-content: center;
     max-width: 100%;
-    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+
+
+@media (min-width:700px) {
+    .container-carta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-gap: 10px;
+        margin: 0;
+    }
 }
