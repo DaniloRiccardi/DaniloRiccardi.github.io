@@ -59,7 +59,7 @@ body{
 .navlink:hover{
     background-color: rgb(58, 92, 83);
     color: white;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 6px black;
 }
 
 #welcome-section{
