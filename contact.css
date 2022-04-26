@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+body{
+    background-color: #111;
+}
+#contacto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    text-align: center;
+    padding-bottom: 29vh;
+    border-bottom: 1px solid gray;
+}
+
+#titulo{
+    font-size: 18vh;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+
+#contacto a{
+    font-size: 8vh;
+    color: white;
+    text-decoration: none;
+    display:grid;
+}
+#contacto a:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+
+
+.nav-container{
+    display: block;
+    max-width: 80vh;
+}
+.nav-container{
+    justify-content: space-between;
+    display: grid;
+    margin-left: 7vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 7vh;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.nav-container a {
+    background-color: #222;
+    display: grid;
+    padding: 16vh;
+    font-size: 60px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    justify-content: center;
+    box-shadow: 15px 15px 20px black;
+}
+
+
+.nav-container a:hover{
+    background-color: #444;
+    transform: scale(1.1);
+    transform: rotate(10deg);
+}
+
+
+
+
+
+
+@media (max-width:1200px){  
+    .nav-container{
+        grid-template-columns: repeat(2,1fr);
+        margin:auto;
+        margin-top: 80px;
+        margin-left: 6%;
+    }
+}
+@media (max-width:866px){
+    #titulo{
+        font-size: 69px;
+        text-align: center;
+    }
+    #contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+        grid-gap: 60px;
+    }
+    
+    
+    
+    .nav-container{
+        grid-template-columns: 1fr;
+        grid-gap:0;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        padding: 0;
+    }
+    .nav-container a{
+        padding: 10vh;
+        margin-bottom: 30px;
+    }
+}

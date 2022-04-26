@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=VT323&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111;
+}
+
+.contenedor-portada{
+    position: relative;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 27vh;
+}
+
+.caja{
+    background-color: darkgrey;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    opacity: .4;
+    bottom: 0;
+
+    animation: caida 3s linear infinite;
+}
+.caja:nth-child(2){
+    width: 50px;
+    height: 50px;
+    left: 25%;
+    animation-duration: 4s;
+}
+.caja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 55%;
+    animation-duration: 9s;
+}
+.caja:nth-child(4){
+    width: 30px;
+    height: 30px;
+    left: 40%;
+    animation-duration: 7s;
+}
+.caja:nth-child(5){
+    width: 40px;
+    height: 40px;
+    left: 85%;
+    animation-duration: 2s;
+}
+.caja:nth-child(6){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 4s;
+}
+.caja:nth-child(7){
+    width: 60px;
+    height: 60px;
+    left: 45%;
+    animation-duration: 5s;
+}
+.caja:nth-child(8){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    bottom: -20%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.caja:nth-child(9){
+    width: 20px;
+    height: 20px;
+    left: 90%;
+    animation-duration: 5s;
+}
+.caja:nth-child(10){
+    width: 60px;
+    height: 60px;
+    left: 55%;
+    animation-duration: 3s;
+}
+
+
+@keyframes caida{
+    0%{ opacity: .2;}
+    40%{transform: translateX(50px);background-color: #111;}
+    50%{opacity: .7; transform: rotate(25deg);background-color: #111;}
+    70%{transform: translateX(-50px);}
+    100%{bottom: 100vh;}
+}
+
+
+#titulo{
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 21vh;
+    font-family: 'VT323', monospace;
+    padding-top: 22vh;
+    font-weight: 100;
+}
+
+
+#subtitulo{
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 9vh;
+    font-family: 'VT323', monospace;
+}
+
+
+
+
+/* Botones */
+.nav-container{
+    justify-content: space-between;
+    display: grid;
+    margin-left: 5vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 7vh;
+    margin-bottom: 100px;
+}
+.nav-container a {
+    background-color: #222;
+    display: grid;
+    padding: 16vh;
+    font-size: 60px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    max-width: 20vh;
+    justify-content: center;
+    box-shadow: 15px 15px 20px black;
+}
+
+
+.nav-container a:hover{
+    background-color: #444;
+    transform: scale(1.1);
+    transform: rotate(10deg);
+}
+
+@media (max-width:1200px){  
+    .contenedor-portada{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    .nav-container{
+        grid-template-columns: repeat(2,1fr);
+        margin:auto;
+        margin-top: 80px;
+        margin-left: 6%;
+    }
+}
+@media (max-width:930px){
+    .contenedor-portada{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    #titulo,#subtitulo{
+        font-size: 90px;
+        margin: 0;
+        padding: 0;
+        padding-top: 20vh;
+    }
+    #subtitulo{
+        font-size: 50px;
+        padding-top: 5vh;
+    }
+    
+    .nav-container{
+        grid-template-columns: 1fr;
+        grid-gap:0;
+        margin: auto;
+        margin-top: 100px;
+        padding: 0;
+    }
+    .nav-container a{
+        padding: 10vh;
+        margin-bottom: 30px;
+    }
+}
