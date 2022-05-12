@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js{
+    background:linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.658)),url(../img/hero2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+}
+
+.marco{
+    border: 1px solid rgb(0, 255, 179);
+    background-color: rgba(0, 0, 0, 0.644);
+    margin: 50px auto;
+    padding: 40px;
+    width: 50%;
+}
+
+#nav-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+}
+#nav{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    margin: 10px;
+    border: 1px solid rgb(0, 255, 179);
+    display: flex;
+    flex-direction: row;
+}
+li a{
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 50px;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+li a:hover{
+    color: black;
+    background-color: #00ffb3;
+}
+
+
+h3{
+    padding: 60px 0 80px 0;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+}
+.link-red{
+    margin: 10px;
+    font-size: 100px;
+}
+i:hover{
+    color: #00ffb3;
+}
+.instagram{
+    color:#de3578;
+}
+.facebook{
+    color: #3b59a3;
+}
+.github{
+    color: rgb(255, 255, 255);
+}
+.linkedin{
+    color: #0077b7;
+}
+.email{
+    color: #f14336;
+}
+@media (max-width:800px){
+    #nav{
+        flex-direction: column;
+    }
+    .marco{
+        width: 70%;
+    }
+}
