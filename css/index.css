@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#particles-js{
+    background:linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.658)),url(../img/hero2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+}
+
+#contenedor{
+    width: 60%;
+    height: 100%;
+    padding: 30px 0;
+    margin: 40px auto;
+    border: 1px solid rgb(0, 255, 179);
+    background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#titulo,#subtitulo{
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+#subtitulo{
+    font-size: 40px;
+    
+}
+span{
+    padding: 3px;
+    color: black;
+    background-color: #00ffb3;
+}
+
+#nav{
+    margin-top: 50px;
+}
+
+li{
+    margin: 10px 0;
+    border: 1px solid rgb(0, 255, 179);
+    display: flex;
+}
+a{
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 80px;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+a:hover{
+    color: black;
+    background-color: #00ffb3;
+}
+@media (max-width:800px){
+    #contenedor{
+        width: 90%;
+    }
+    #titulo,#subtitulo{
+        font-size: 60px;
+        font-weight: 100;
+    }
+    #subtitulo{
+        font-size: 30px;
+    }
+}
